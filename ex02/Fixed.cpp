@@ -42,6 +42,10 @@ int Fixed::getRawBits() const {
 	return this->FixedPointValue;
 }
 
+void Fixed::setRawBits(const int raw) {
+	this->FixedPointValue = raw;
+}
+
 int Fixed::toInt() const {
 	return this->FixedPointValue >> this->FractionalBits;
 }
